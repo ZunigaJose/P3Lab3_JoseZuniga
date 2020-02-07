@@ -8,9 +8,9 @@ class Triangulo {
 	public:
 	Triangulo();
 	Triangulo(double a, double b, double c);
-	void setA(int x) {a = x;};
-	void setB(int x) {b = x;};
-	void setC(int x) {c = x;};
+	void setA(double x) {a = x;};
+	void setB(double x) {b = x;};
+	void setC(double x) {c = x;};
 	double getA(){return a;};
 	double getB(){return b;};
 	double getC(){return c;};
