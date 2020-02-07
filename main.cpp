@@ -1,5 +1,5 @@
 #include<iostream>
-
+#include "triangulo.hpp"
 using namespace std;
 
 int triangu(int n) {
@@ -14,6 +14,16 @@ int triangu(int n) {
 	return nTriangular;
 }
 
+int ingresoVals(char c) {
+	int x;
+	cout << "Ingrese el valor de " << c << ": ";
+	cin >> x;
+	while(x <= 0) {
+		cout << "\aValor Invalido!!\nIntente de nuevo: ";
+		cin >> x;
+	} return x;
+}
+
 int menu() {
 	int op;
 	cout << "Lab 3 - Jose Zuniga -" << endl;
@@ -26,8 +36,14 @@ int menu() {
 }
 
 int main() {
-	int usoVario;
+	int usoVario, a, b, c;
 	int op;
+	cout << "--- Valores de Triangulo---" << endl;
+        a = ingresoVals('a');
+        b = ingresoVals('b');//Dijo Manrique este seria la altura siempre!
+        c = ingresoVals('c');
+        Triangulo triangle(a,b,c);
+	cout << "---Valores de Circulo---" << endl; 
 	do {
 		op = menu();
 		switch (op) {
@@ -35,6 +51,10 @@ int main() {
 				cout << "Ingrese el un numero m: ";
 				cin >> usoVario;
 				cout << "numero triangular: " << triangu(usoVario) << endl << endl;
+			break;
+			case 2:
+				cout << "Area de Triangulo: " << triangle.area() << endl;
+
 			break;
 		}
 	} while (op);
