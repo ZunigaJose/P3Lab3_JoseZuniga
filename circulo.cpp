@@ -1,12 +1,14 @@
 #include"circulo.hpp"
-
+#include<iostream>
+using namespace std;
 Circulo::Circulo() {
 
 }
 
-Circulo::Circulo(double radio) {
+Circulo::Circulo(double rad) {
+	radio = rad;
 	diametro = 2 * radio;
-	calcCircun();
+	void calcCircun();
 }
 
 void Circulo::calcCircun() {
@@ -14,5 +16,7 @@ void Circulo::calcCircun() {
 }
 
 double Circulo::area() {
+	cout << "radio: " << radio << endl;
+	cout << "pi: " << pi << endl;
 	return pi * (radio * radio);
 }

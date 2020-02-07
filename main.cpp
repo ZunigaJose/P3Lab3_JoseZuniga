@@ -15,8 +15,8 @@ int triangu(int n) {
 	return nTriangular;
 }
 
-int ingresoVals(char c) {
-	int x;
+double ingresoVals(char c) {
+	double x;
 	cout << "Ingrese el valor de " << c << ": ";
 	cin >> x;
 	while(x <= 0) {
@@ -37,7 +37,8 @@ int menu() {
 }
 
 int main() {
-	int usoVario, a, b, c;
+	int usoVario;
+	double a, b, c;
 	int op;
 	cout << "--- Valores de Triangulo---" << endl;
         a = ingresoVals('a');
@@ -47,6 +48,7 @@ int main() {
 	cout << "---Valores de Circulo---" << endl; 
 	a = ingresoVals('r');
 	Circulo circle(a);
+	cout << "Valor de a: " << a << endl;
 	do {
 		op = menu();
 		switch (op) {
