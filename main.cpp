@@ -1,5 +1,6 @@
 #include<iostream>
 #include "triangulo.hpp"
+#include "circulo.hpp"
 using namespace std;
 
 int triangu(int n) {
@@ -44,6 +45,8 @@ int main() {
         c = ingresoVals('c');
         Triangulo triangle(a,b,c);
 	cout << "---Valores de Circulo---" << endl; 
+	a = ingresoVals('r');
+	Circulo circle(a);
 	do {
 		op = menu();
 		switch (op) {
@@ -55,6 +58,9 @@ int main() {
 			case 2:
 				cout << "Area de Triangulo: " << triangle.area() << endl;
 
+			break;
+			case 3:
+				cout << "Area de Circulo: " << circle.area() << endl;
 			break;
 		}
 	} while (op);

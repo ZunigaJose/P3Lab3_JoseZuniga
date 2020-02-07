@@ -3,8 +3,8 @@
 class Circulo {
 	private:
 	double radio, diametro, circun;
-	int calcCircun();
-	
+	void calcCircun();
+	float const pi = 3.14159265359;
 	public:
 	Circulo();
 	Circulo(double radio);
