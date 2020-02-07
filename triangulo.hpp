@@ -7,12 +7,12 @@ class Triangulo {
 	
 	public:
 	Triangulo();
-	Triangulo(int a, int b, int c);
+	Triangulo(double a, double b, double c);
 	void setA(int x) {a = x;};
 	void setB(int x) {b = x;};
 	void setC(int x) {c = x;};
-	int getA(){return a;};
-	int getB(){return b;};
-	int getC(){return c;};
+	double getA(){return a;};
+	double getB(){return b;};
+	double getC(){return c;};
 	double area();
 };

@@ -6,7 +6,7 @@ Triangulo::Triangulo() {
 	
 }
 
-Triangulo::Triangulo(int a, int b, int c) {
+Triangulo::Triangulo(double a, double b, double c) {
 	setA(a);
 	setB(b);
 	setC(c);
