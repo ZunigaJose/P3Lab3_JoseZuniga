@@ -1,6 +1,7 @@
 #include<iostream>
 #include "triangulo.hpp"
 #include "circulo.hpp"
+#include "piramide.hpp"
 using namespace std;
 
 int triangu(int n) {
@@ -63,6 +64,11 @@ int main() {
 			break;
 			case 3:
 				cout << "Area de Circulo: " << circle.area() << endl;
+			break;
+			case 4:
+				a = ingresoVals('a');
+				Piramide pira(triangle, a);
+				cout << "Volumen de la Piramide: " << pira.vol();
 			break;
 		}
 	} while (op);

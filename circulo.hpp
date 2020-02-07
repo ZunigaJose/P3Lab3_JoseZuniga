@@ -8,9 +8,9 @@ class Circulo {
 	public:
 	Circulo();
 	Circulo(double radio);
-	void setRadio(int x){radio = x;};
-	void setDiametro(int x) {diametro = x;};
-	void setCircun(int x) {circun = x;};
+	void setRadio(double x){radio = x;};
+	void setDiametro(double x) {diametro = x;};
+	void setCircun(double x) {circun = x;};
 	double getRadio() {return radio;};
 	double getDiametro() {return diametro;};
 	double getCircun() {return circun;};

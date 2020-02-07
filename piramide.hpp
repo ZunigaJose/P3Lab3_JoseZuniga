@@ -6,8 +6,10 @@ class Piramide {
 	double altura;
 
 	public:
+	Piramide();
+	Piramide(Triangulo tri, double alt);
 	void setTriangulo(Triangulo tri){triangle = tri;};
-	void setAltura(int alt) {altura = alt;};
+	void setAltura(double alt) {altura = alt;};
 	double getAltura() {return altura;};
 	Triangulo getTriangulo(){return triangle;};
 	double vol();
