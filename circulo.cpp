@@ -1,9 +1,10 @@
 #include"circulo.hpp"
 #include<iostream>
 using namespace std;
-Circulo::Circulo() {
 
-}
+//Circulo::Circulo() {
+
+//}
 
 Circulo::Circulo(double rad) {
 	radio = rad;

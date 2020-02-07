@@ -4,9 +4,9 @@ class Circulo {
 	private:
 	double radio, diametro, circun;
 	void calcCircun();
-	float const pi = 3.14159265359;
+	float pi = 3.14159265359;
 	public:
-	Circulo();
+	Circulo(){};
 	Circulo(double radio);
 	void setRadio(double x){radio = x;};
 	void setDiametro(double x) {diametro = x;};

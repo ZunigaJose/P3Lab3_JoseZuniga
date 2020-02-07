@@ -2,6 +2,8 @@
 #include "triangulo.hpp"
 #include "circulo.hpp"
 #include "piramide.hpp"
+#include "esfera.hpp"
+
 using namespace std;
 
 int triangu(int n) {
@@ -33,7 +35,7 @@ int menu() {
 	cout << "2. Calcular area de triangulo\n3. Calcular area de circulo\n";
 	cout << "4. Calcular volumen de piramide\n5. Calcular volumen de esfera: ";
 	cin >> op;
-	if(op < 0 || op > 4) return menu();
+	if(op < 0 || op > 5) return menu();
 	return op;
 }
 
@@ -50,6 +52,8 @@ int main() {
 	a = ingresoVals('r');
 	Circulo circle(a);
 	cout << "Valor de a: " << a << endl;
+	Piramide pira(triangle, a);
+	Esfera es(circle);
 	do {
 		op = menu();
 		switch (op) {
@@ -67,8 +71,10 @@ int main() {
 			break;
 			case 4:
 				a = ingresoVals('a');
-				Piramide pira(triangle, a);
 				cout << "Volumen de la Piramide: " << pira.vol();
+			break;
+			case 5:
+				cout << "Volumen de la esfera: " << es.vol() << endl;
 			break;
 		}
 	} while (op);
