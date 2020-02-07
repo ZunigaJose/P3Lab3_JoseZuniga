@@ -9,5 +9,5 @@ Esfera::Esfera(Circulo cir) {
 }
 
 double Esfera::vol() {
-	return (3.14159 * pow(circle.getRadio(), 3) * 4 / 3);
+	return (3.14159265359 * pow(circle.getRadio(), 3) * 4 / 3);
 }
